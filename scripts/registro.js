@@ -35,26 +35,26 @@ regionSelect.addEventListener('change', () => {
   }
 });
 
-const formRegistro = document.querySelector(".RegistroUsuario-box form");
+const formRegistro = document.getElementById("formRegistro");
 
 formRegistro.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const nombre = document.getElementById("Nombre").value.trim();
   const email = document.getElementById("email").value.trim();
-  const contraseña = document.getElementById("contraseña").value.trim();
-  const confirmar = document.getElementById("contraseña-Confirmacion").value.trim();
+  const password = document.getElementById("password").value.trim();
+  const confirmar = document.getElementById("passwordConfirm").value.trim();
   const telefono = document.getElementById("telefono").value.trim();
   const region = document.getElementById("region").value;
   const comuna = document.getElementById("comuna").value;
   const fechaNacimiento = document.getElementById("fechaNacimiento")?.value;
 
-  if (!nombre || !email || !contraseña || !confirmar || !region || !comuna || !fechaNacimiento) {
+  if (!nombre || !email || !password || !confirmar || !region || !comuna || !fechaNacimiento) {
     alert("Completa todos los campos");
     return;
   }
 
-  if (contraseña !== confirmar) {
+  if (password !== confirmar) {
     alert("Las contraseñas no coinciden");
     return;
   }
@@ -87,7 +87,7 @@ formRegistro.addEventListener("submit", (e) => {
   }
 
   // Guardar usuario
-  usuarios.push({ nombre, email, contraseña, telefono, region, comuna, descuento });
+  usuarios.push({ nombre, email, password, telefono, region, comuna, descuento });
   localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
   // Mensaje especial

@@ -61,7 +61,7 @@
   <!-- todos los html deben tener esta parte -->
 
   <section class="Registro-box">
-    <form>
+    <form id="formRegistro">
       <fieldset>
         <legend class="RegistroUsuario">Registro de Usuario</legend>
 
@@ -76,13 +76,13 @@
         </div>
 
         <div class="constraseña-registro">
-          <label for="contraseña">Contraseña</label>
-          <input type="password" id="contraseña" name="password" placeholder="Ingrese su contraseña"><br>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="Ingrese su contraseña"><br>
         </div>
 
         <div class="constraseña-confirmacion-registro">
-          <label for="contraseña">Confirmar Contraseña</label>
-          <input type="password" id="contraseña-Confirmacion" name="password" placeholder="Ingrese nuevamente su contraseña"><br>
+          <label for="passwordConfirm">Confirmar Contraseña</label>
+          <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Ingrese nuevamente su contraseña"><br>
         </div>
 
         <div class="telefono-registro">
@@ -96,7 +96,7 @@
         </div>
 
         <div class="selector-de-region">
-          <select id="region" name="region" onchange="actualizarComunas()">
+          <select id="region" name="region">
             <option value="">Selecciona tu Región</option>
             <option value="Ari">Arica y Parinacota</option>
             <option value="Tar">Tarapacá</option>
