@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- todos los html deben tener esta parte -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Usuario</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/registro.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand" href="#">LEVEL-UP GAMER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+        <form class="d-flex mx-auto search-bar">
+        <input class="form-control me-2" type="search" placeholder="Buscar " aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Consolas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Accesorios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Juegos de Mesa</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button">
+            Inicia sesión
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end bg-dark text-white" aria-labelledby="loginDropdown">
+            <li><a class="dropdown-item text-white" href="login.html">Inicia sesión</a></li>
+            <li><a class="dropdown-item text-white" href="registro.html">Regístrate</a></li>
+            <li><a class="dropdown-item text-white" href="#">Mi cuenta</a></li>
+            <li><hr class="dropdown-divider bg-light"></li>
+            <li><a class="dropdown-item text-white" href="#">Puntos LevelUp</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  </header>
+
+  <section class="title text-center">
+    <div class="container title-wrapper">
+    </div>
+  </section>
+
+  <!-- todos los html deben tener esta parte -->
+
+  <section class="Registro-box">
+    <form>
+      <fieldset>
+        <legend class="RegistroUsuario">Registro de Usuario</legend>
+
+        <div class="Nombre-registro">
+          <label for="Nombre">Nombre Completo</label>
+          <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre completo"><br>
+        </div>
+
+        <div class="email-registro">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Ingrese su correo electronico"><br>
+        </div>
+
+        <div class="constraseña-registro">
+          <label for="contraseña">Contraseña</label>
+          <input type="password" id="contraseña" name="password" placeholder="Ingrese su contraseña"><br>
+        </div>
+
+        <div class="constraseña-confirmacion-registro">
+          <label for="contraseña">Confirmar Contraseña</label>
+          <input type="password" id="contraseña-Confirmacion" name="password" placeholder="Ingrese nuevamente su contraseña"><br>
+        </div>
+
+        <div class="telefono-registro">
+          <label for="telefono">Telefono (Opcional)</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero de telefono"><br>
+        </div>
+
+        <div class="fecha-registro">
+          <label for="fechaNacimiento">Fecha de Nacimiento</label>
+          <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+
+        <div class="selector-de-region">
+          <select id="region" name="region" onchange="actualizarComunas()">
+            <option value="">Selecciona tu Región</option>
+            <option value="Ari">Arica y Parinacota</option>
+            <option value="Tar">Tarapacá</option>
+            <option value="Ant">Antofagasta</option>
+            <option value="Ata">Atacama</option>
+            <option value="Coq">Coquimbo</option>
+            <option value="Val">Valparaíso</option>
+            <option value="stgo">Metropolitana </option>
+            <option value="OHi">O’Higgins</option>
+            <option value="Mau">Maule</option>
+            <option value="Nub">Ñuble</option>
+            <option value="Bio">Biobío</option>
+            <option value="Arau">La Araucanía</option>
+            <option value="Rio">Los Ríos</option>
+            <option value="Lag">Los Lagos</option>
+            <option value="Ays">Aysén</option>
+            <option value="Mag">Magallanes</option>
+          </select>
+
+          <select id="comuna" name="comuna">
+            <option value=""> Selecciona tu Comuna </option>
+          </select>
+        </div>
+
+        <button class="boton-registro" type="submit">Registrar</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer class="bg-black text-white text-center py-4">
+    <p>&copy; 2025 LEVEL-UP GAMER.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../scripts/registro.js"></script>
+</body>
+</html>
