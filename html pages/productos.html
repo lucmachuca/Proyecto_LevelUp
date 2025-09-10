@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - LEVEL-UP GAMER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">LEVEL-UP GAMER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <form class="d-flex mx-auto search-bar">
+                        <input class="form-control me-2" type="search" placeholder="Buscar productos..." aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="bi bi-person"></i> Mi Cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-dark text-white" aria-labelledby="loginDropdown">
+                                <li><a class="dropdown-item text-white" href="login.html">Inicia sesión</a></li>
+                                <li><a class="dropdown-item text-white" href="registro.html">Regístrate</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Mi perfil</a></li>
+                                <li><hr class="dropdown-divider bg-light"></li>
+                                <li><a class="dropdown-item text-white" href="#">Puntos LevelUp</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html">
+                                <i class="bi bi-cart3"></i> Carrito <span id="cart-count" class="badge bg-success">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Filtros y ordenamiento -->
+    <section class="filters-section py-4 bg-dark">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <select id="filter-category" class="form-select filter-select">
+                        <option value="">Todas las categorías</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Juegos">Juegos</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="sort-price" class="form-select filter-select">
+                        <option value="">Ordenar por</option>
+                        <option value="asc">Precio: Menor a mayor</option>
+                        <option value="desc">Precio: Mayor a menor</option>
+                        <option value="name">Nombre A-Z</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control filter-input" placeholder="Buscar por nombre o descripción..." id="search-products">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-neon w-100" id="reset-filters">
+                        <i class="bi bi-arrow-clockwise"></i> Limpiar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de productos -->
+    <section class="products-listing py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Todos nuestros productos</h2>
+                <span class="product-count" id="product-count">8 productos encontrados</span>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="products-container">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+
+            <!-- Loading indicator -->
+            <div class="text-center mt-5" id="loading-indicator" style="display: none;">
+                <div class="spinner-border text-neon" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+                <p class="mt-2">Cargando productos...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>LEVEL-UP GAMER</h5>
+                    <p>Tu tienda de confianza para productos gaming</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-neon">Inicio</a></li>
+                        <li><a href="productos.html" class="text-decoration-none text-neon">Productos</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-neon">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="bi bi-envelope text-neon"></i> info@levelupgamer.cl</p>
+                    <p><i class="bi bi-phone text-neon"></i> +56 9 1234 5678</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 LEVEL-UP GAMER. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/productos.js"></script>
+</body>
+</html>
