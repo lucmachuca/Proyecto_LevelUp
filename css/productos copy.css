@@ -79,7 +79,7 @@ body {
     font-weight: bold;
 }
 
-/* Product cards */
+
 .product-card {
     background: #111;
     border: 2px solid #1e90ff;
@@ -144,7 +144,7 @@ body {
     box-shadow: 0 0 15px #39ff14;
 }
 
-/* Loading indicator */
+
 .text-neon {
     color: #39ff14 !important;
 }
@@ -154,7 +154,7 @@ body {
     border-right-color: transparent;
 }
 
-/* Footer links */
+
 .text-neon {
     color: #39ff14;
     transition: 0.3s;
@@ -165,7 +165,7 @@ body {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Alert messages */
+
 .alert-message {
     position: fixed;
     top: 100px;
@@ -202,7 +202,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Loading indicator improvements */
+
 #loading-indicator {
     color: #39ff14;
 }

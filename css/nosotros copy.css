@@ -40,7 +40,7 @@ body {
     width: 300px;
 }
 
-/* Breadcrumb */
+
 .breadcrumb-section {
     background: #111 !important;
     border-bottom: 2px solid #1e90ff;
@@ -57,7 +57,7 @@ body {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Hero Section */
+
 .hero-nosotros {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
                 url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&w=1200') no-repeat center center/cover;
@@ -77,7 +77,7 @@ body {
     text-shadow: 0 0 8px #1e90ff;
 }
 
-/* Section Titles */
+
 .section-title {
     color: #39ff14;
     text-shadow: 0 0 10px #39ff14;
@@ -95,7 +95,7 @@ body {
     margin: 15px 0;
 }
 
-/* Our History */
+
 .our-history {
     background: #000;
 }
@@ -182,7 +182,7 @@ body {
     line-height: 1.6;
 }
 
-/* Values */
+
 .values {
     background: #000;
 }
@@ -222,7 +222,7 @@ body {
     line-height: 1.6;
 }
 
-/* Team */
+
 .team {
     background: #111 !important;
     border-top: 3px solid #39ff14;
@@ -272,7 +272,7 @@ body {
     margin-bottom: 0 !important;
 }
 
-/* Footer */
+
 footer {
     background-color: #000;
     color: #1e90ff;

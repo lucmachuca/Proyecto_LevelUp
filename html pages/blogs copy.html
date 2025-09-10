@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - LEVEL-UP GAMER</title>
+    <title>Blogs - LEVEL-UP GAMER</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/productos.css">
+    <link rel="stylesheet" href="../css/blogs.css">
 </head>
 <body>
-    <!-- Header -->
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
@@ -26,9 +26,9 @@
 
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         
                         <li class="nav-item dropdown">
@@ -55,61 +55,88 @@
         </nav>
     </header>
 
-    <!-- Filtros y ordenamiento -->
-    <section class="filters-section py-4 bg-dark">
+    <nav class="breadcrumb-section py-3 bg-dark">
         <div class="container">
-            <div class="row g-3">
-                <div class="col-md-3">
-                    <select id="filter-category" class="form-select filter-select">
-                        <option value="">Todas las categorías</option>
-                        <option value="Consolas">Consolas</option>
-                        <option value="Accesorios">Accesorios</option>
-                        <option value="Juegos">Juegos</option>
-                    </select>
+            <a href="index.html" class="text-neon">Inicio</a> > 
+            <span class="text-light">Blogs</span>
+        </div>
+    </nav>
+
+
+    <section class="hero-blogs py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Blog Level-Up Gamer</h1>
+            <p class="lead">Noticias, tips y novedades del mundo gaming</p>
+        </div>
+    </section>
+
+
+    <section class="blog-posts py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Últimas Noticias</h2>
+            
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-6 mb-5">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&w=600" 
+                             alt="Nuevo Call of Duty" class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Call of Duty: Modern Warfare III - Todo lo que necesitas saber</h3>
+                            <p class="blog-date"><i class="bi bi-calendar"></i> 15 Marzo 2025</p>
+                            <p class="blog-excerpt">
+                                La esperada secuela de Modern Warfare II promete revolucionar el género FPS con nuevos mapas, 
+                                modos de juego y una campaña que continúa la historia donde quedó. Descubre todas las novedades...
+                            </p>
+                            <a href="blog-detalle-cod.html" class="btn btn-read-more">Leer más</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <select id="sort-price" class="form-select filter-select">
-                        <option value="">Ordenar por</option>
-                        <option value="asc">Precio: Menor a mayor</option>
-                        <option value="desc">Precio: Mayor a menor</option>
-                        <option value="name">Nombre A-Z</option>
-                    </select>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-6 mb-5">
+                    <div class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?ixlib=rb-4.0.3&w=600" 
+                             alt="Setup Gamer" class="blog-image">
+                        <div class="blog-content">
+                            <h3 class="blog-title">Cómo armar el setup gamer perfecto en 2025</h3>
+                            <p class="blog-date"><i class="bi bi-calendar"></i> 10 Marzo 2025</p>
+                            <p class="blog-excerpt">
+                                Te guiamos paso a paso para crear el espacio gaming definitivo. Desde la elección del monitor 
+                                hasta la iluminación RGB, aprende a optimizar tu setup para maximizar el rendimiento...
+                            </p>
+                            <a href="blog-detalle-setup.html" class="btn btn-read-more">Leer más</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <input type="text" class="form-control filter-input" placeholder="Buscar por nombre o descripción..." id="search-products">
-                </div>
-                <div class="col-md-2">
-                    <button class="btn btn-outline-neon w-100" id="reset-filters">
-                        <i class="bi bi-arrow-clockwise"></i> Limpiar
+            </div>
+
+            <!-- Más blogs (a futuro mas) -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-load-more">
+                        <i class="bi bi-arrow-down"></i> Cargar más artículos
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lista de productos -->
-    <section class="products-listing py-5">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="section-title">Todos nuestros productos</h2>
-                <span class="product-count" id="product-count">8 productos encontrados</span>
-            </div>
-            
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="products-container">
-                <!-- Los productos se cargarán aquí con JavaScript -->
-            </div>
 
-            <!-- Loading indicator -->
-            <div class="text-center mt-5" id="loading-indicator" style="display: none;">
-                <div class="spinner-border text-neon" role="status">
-                    <span class="visually-hidden">Cargando...</span>
+    <section class="newsletter py-5 bg-dark">
+        <div class="container text-center">
+            <h3 class="mb-3">¡Suscríbete a nuestro newsletter!</h3>
+            <p class="mb-4">Recibe las últimas noticias gaming y ofertas exclusivas</p>
+            <form class="newsletter-form">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                    <button class="btn btn-neon" type="submit">Suscribirse</button>
                 </div>
-                <p class="mt-2">Cargando productos...</p>
-            </div>
+            </form>
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="bg-black text-white py-4">
         <div class="container">
             <div class="row">
@@ -122,6 +149,7 @@
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="text-decoration-none text-neon">Inicio</a></li>
                         <li><a href="productos.html" class="text-decoration-none text-neon">Productos</a></li>
+                        <li><a href="blogs.html" class="text-decoration-none text-neon">Blogs</a></li>
                         <li><a href="contacto.html" class="text-decoration-none text-neon">Contacto</a></li>
                     </ul>
                 </div>
@@ -139,6 +167,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../scripts/productos.js"></script>
+    <script src="../scripts/blogs.js"></script>
 </body>
 </html>

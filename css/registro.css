@@ -32,53 +32,37 @@ body {
 
 /*todos los html deben tener esta parte */
 
-/* --- Títulos --- */
-.titulo {
-  text-align: center;
-  color: #39ff14;
-  font-size: 2rem;
-  margin-top: 30px;
-  text-shadow: 0 0 8px #39ff14, 0 0 12px #1e90ff;
-}
 
-.sesion-inicio-1 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #1e90ff;
-  text-align: center;
-  margin-bottom: 20px;
-  text-shadow: 0 0 6px #39ff14;
-}
-
-/* --- Caja de Login --- */
-.login-box {
-  max-width: 400px;
+/* Caja de registro */
+.Registro-box {
+  max-width: 500px;
   margin: 50px auto;
   padding: 25px;
-  background-color: #111;
+  background-color: #111; /* negro suave */
   border: 2px solid #1e90ff;
   border-radius: 10px;
-  box-shadow: 0 0 15px #1e90ff, 0 0 25px #39ff14;
+  box-shadow: 0 0 20px #1e90ff, 0 0 40px #39ff14;
 }
 
-/* --- Fieldset --- */
-.inicio {
-  border: none;
-  padding: 10px;
+/* Título */
+.RegistroUsuario {
+  font-size: 1.5rem;
+  color: #39ff14;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #39ff14;
 }
 
-/* --- Labels --- */
-.email-inicio label,
-.constraseña-inicio label {
+
+label {
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
   color: #1e90ff;
   font-weight: bold;
 }
 
-/* --- Inputs --- */
-.email-inicio input,
-.constraseña-inicio input {
+
+input, select {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -86,18 +70,17 @@ body {
   border-radius: 5px;
   background-color: #000;
   color: #39ff14;
-  box-shadow: inset 0 0 10px #1e90ff;
+  outline: none;
+  box-shadow: 0 0 10px #1e90ff inset;
   transition: 0.3s;
 }
 
-.email-inicio input:focus,
-.constraseña-inicio input:focus {
-  outline: none;
-  box-shadow: inset 0 0 12px #39ff14, 0 0 8px #39ff14;
+input:focus, select:focus {
+  box-shadow: 0 0 15px #39ff14 inset;
 }
 
-/* --- Botón Inicio Sesión --- */
-.boton-inicio {
+/* Botón */
+.boton-registro {
   width: 100%;
   margin-top: 20px;
   padding: 12px;
@@ -110,15 +93,15 @@ body {
   transition: 0.3s;
 }
 
-.boton-inicio:hover {
+.boton-registro:hover {
   transform: scale(1.05);
   box-shadow: 0 0 15px #39ff14, 0 0 20px #1e90ff;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
   background-color: #000;
   color: #1e90ff;
   border-top: 2px solid #39ff14;
-  text-shadow: 0 0 5px #39ff14;
+  text-shadow: 0 0 6px #39ff14;
 }

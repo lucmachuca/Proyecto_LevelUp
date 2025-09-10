@@ -9,7 +9,7 @@ body {
     padding: 0;
 }
 
-/* Navbar */
+
 .navbar {
     background-color: #000 !important;
     border-bottom: 2px solid #1e90ff;
@@ -36,7 +36,7 @@ body {
     width: 300px;
 }
 
-/* Breadcrumb */
+
 .breadcrumb-section {
     background: #111 !important;
     border-bottom: 2px solid #1e90ff;
@@ -53,7 +53,7 @@ body {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Contact Section */
+
 .contact-section {
     background: #000;
 }
@@ -83,7 +83,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Form Styles */
+
 .contact-form label {
     color: #39ff14;
     font-weight: bold;
@@ -117,13 +117,13 @@ body {
     font-size: 0.9rem;
 }
 
-/* Invalid feedback */
+
 .invalid-feedback {
     color: #ff6b6b;
     font-weight: bold;
 }
 
-/* Checkbox */
+
 .form-check-input {
     background: #000;
     border: 2px solid #1e90ff;
@@ -138,7 +138,7 @@ body {
     color: #ccc;
 }
 
-/* Buttons */
+
 .btn-send {
     background: linear-gradient(135deg, #39ff14, #1e90ff);
     color: #000;
@@ -155,7 +155,7 @@ body {
     box-shadow: 0 0 20px #39ff14;
 }
 
-/* Contact Info */
+
 .contact-info {
     border-top: 3px solid #39ff14;
     border-bottom: 3px solid #1e90ff;
@@ -183,7 +183,7 @@ body {
     margin: 0;
 }
 
-/* FAQ Section */
+
 .faq-section {
     background: #000;
 }
@@ -218,7 +218,7 @@ body {
     border-top: 2px solid #1e90ff;
 }
 
-/* Footer */
+
 footer {
     background-color: #000;
     color: #1e90ff;
@@ -236,7 +236,7 @@ footer {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Success Message */
+
 .alert-success {
     background: linear-gradient(135deg, #39ff14, #1e90ff);
     color: #000;

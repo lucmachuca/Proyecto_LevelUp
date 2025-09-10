@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Producto - LEVEL-UP GAMER</title>
+    <title>Productos - LEVEL-UP GAMER</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/detalle-producto.css">
+    <link rel="stylesheet" href="../css/productos.css">
 </head>
 <body>
-    <!-- Header -->
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container">
@@ -26,7 +26,7 @@
 
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -55,91 +55,61 @@
         </nav>
     </header>
 
-    <!-- Breadcrumb de navegación -->
-    <nav class="breadcrumb-section py-3 bg-dark">
+    <!-- Filtros -->
+    <section class="filters-section py-4 bg-dark">
         <div class="container">
-            <a href="index.html" class="text-neon">Inicio</a> > 
-            <a href="productos.html" class="text-neon">Productos</a> > 
-            <span class="text-light" id="breadcrumb-product">Detalle del producto</span>
-        </div>
-    </nav>
-
-    <!-- Detalle del producto -->
-    <section class="product-detail py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Galería de imágenes -->
-                <div class="col-md-6">
-                    <div class="main-image-container">
-                        <img src="" alt="Producto" class="main-image" id="main-product-image">
-                    </div>
-                    <div class="gallery-thumbnails mt-3">
-                        <img src="" alt="Miniatura 1" class="thumbnail active" data-image="">
-                        <img src="" alt="Miniatura 2" class="thumbnail" data-image="">
-                        <img src="" alt="Miniatura 3" class="thumbnail" data-image="">
-                    </div>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <select id="filter-category" class="form-select filter-select">
+                        <option value="">Todas las categorías</option>
+                        <option value="Consolas">Consolas</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Juegos">Juegos</option>
+                    </select>
                 </div>
-
-                <!-- Información del producto -->
-                <div class="col-md-6">
-                    <h1 id="product-title">Cargando...</h1>
-                    <p class="product-category badge bg-neon" id="product-category">Consolas</p>
-                    <p class="price" id="product-price">$0</p>
-                    <p class="description" id="product-description">Cargando descripción...</p>
-                    
-                    <div class="stock-info">
-                        <span class="in-stock" id="stock-status"><i class="bi bi-check-circle"></i> En stock</span>
-                        <span class="stock-quantity" id="stock-quantity">(10 disponibles)</span>
-                    </div>
-
-                    <!-- Selector de cantidad -->
-                    <div class="quantity-selector mt-4">
-                        <label class="text-neon">Cantidad:</label>
-                        <div class="quantity-controls">
-                            <button class="quantity-btn" id="quantity-decrease">-</button>
-                            <input type="number" min="1" value="1" id="product-quantity" class="quantity-input">
-                            <button class="quantity-btn" id="quantity-increase">+</button>
-                        </div>
-                    </div>
-
-                    <!-- Botones de acción -->
-                    <div class="action-buttons mt-4">
-                        <button class="btn-add-cart-large" id="add-to-cart-btn">
-                            <i class="bi bi-cart-plus"></i> Añadir al carrito
-                        </button>
-                        <button class="btn-wishlist">
-                            <i class="bi bi-heart"></i> Favoritos
-                        </button>
-                    </div>
-
-                    <!-- Especificaciones -->
-                    <div class="specifications mt-5">
-                        <h3 class="text-neon">Especificaciones</h3>
-                        <ul class="specs-list" id="product-specs">
-                            <li><strong>Marca:</strong> Sony</li>
-                            <li><strong>Modelo:</strong> PlayStation 5</li>
-                            <li><strong>Almacenamiento:</strong> 825 GB SSD</li>
-                            <li><strong>Resolución:</strong> 4K UHD a 120Hz</li>
-                            <li><strong>Conectividad:</strong> WiFi 6, Bluetooth 5.1</li>
-                            <li><strong>Incluye:</strong> Mando DualSense, cables, base</li>
-                        </ul>
-                    </div>
+                <div class="col-md-3">
+                    <select id="sort-price" class="form-select filter-select">
+                        <option value="">Ordenar por</option>
+                        <option value="asc">Precio: Menor a mayor</option>
+                        <option value="desc">Precio: Mayor a menor</option>
+                        <option value="name">Nombre A-Z</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control filter-input" placeholder="Buscar por nombre o descripción..." id="search-products">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-neon w-100" id="reset-filters">
+                        <i class="bi bi-arrow-clockwise"></i> Limpiar
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Productos relacionados -->
-    <section class="related-products py-5 bg-dark">
+    <!-- Lista de productos -->
+    <section class="products-listing py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Productos relacionados</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" id="related-products-container">
-                <!-- Los productos relacionados se cargarán aquí -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Todos nuestros productos</h2>
+                <span class="product-count" id="product-count">8 productos encontrados</span>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="products-container">
+                <!-- Los productos se cargan aqui con javascript -->
+            </div>
+
+            <!-- Loading indicator -->
+            <div class="text-center mt-5" id="loading-indicator" style="display: none;">
+                <div class="spinner-border text-neon" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+                <p class="mt-2">Cargando productos...</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="bg-black text-white py-4">
         <div class="container">
             <div class="row">
@@ -169,6 +139,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../scripts/detalle-producto.js"></script>
+    <script src="../scripts/productos.js"></script>
 </body>
 </html>

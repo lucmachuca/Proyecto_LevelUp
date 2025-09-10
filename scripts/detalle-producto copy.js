@@ -1,4 +1,4 @@
-// Array de productos COMPLETO y CORREGIDO
+// Array de productos arregladoskius
 const productos = [
     {
         id: 1,

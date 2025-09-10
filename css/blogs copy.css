@@ -36,7 +36,7 @@ body {
     width: 300px;
 }
 
-/* Breadcrumb */
+
 .breadcrumb-section {
     background: #111 !important;
     border-bottom: 2px solid #1e90ff;
@@ -53,7 +53,7 @@ body {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Hero Section */
+
 .hero-blogs {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
                 url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&w=1200') no-repeat center center/cover;
@@ -73,7 +73,7 @@ body {
     text-shadow: 0 0 8px #1e90ff;
 }
 
-/* Section Titles */
+
 .section-title {
     color: #39ff14;
     text-shadow: 0 0 10px #39ff14;
@@ -91,7 +91,7 @@ body {
     margin: 15px auto;
 }
 
-/* Blog Cards */
+
 .blog-card {
     background: #111;
     border: 2px solid #1e90ff;
@@ -136,7 +136,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Buttons */
+
 .btn-read-more {
     background: linear-gradient(135deg, #39ff14, #1e90ff);
     color: #000;
@@ -170,7 +170,7 @@ body {
     box-shadow: 0 0 15px #39ff14;
 }
 
-/* Newsletter */
+
 .newsletter {
     border-top: 3px solid #39ff14;
     border-bottom: 3px solid #1e90ff;
@@ -209,7 +209,7 @@ body {
     box-shadow: 0 0 15px #39ff14;
 }
 
-/* Footer */
+
 footer {
     background-color: #000;
     color: #1e90ff;
@@ -227,7 +227,7 @@ footer {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .hero-blogs h1 {
         font-size: 2.2rem;

@@ -1,4 +1,4 @@
-// Array de productos para calcular precios (debe ser el mismo que en otras páginas)
+// Array de productos para calcular precios (debe ser el mismo )
 const productos = [
     {
         id: 1,

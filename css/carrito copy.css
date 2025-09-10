@@ -35,7 +35,7 @@ body {
     width: 300px;
 }
 
-/* Breadcrumb */
+
 .breadcrumb-section {
     background: #111 !important;
     border-bottom: 2px solid #1e90ff;
@@ -52,7 +52,7 @@ body {
     text-shadow: 0 0 5px #1e90ff;
 }
 
-/* Section title */
+
 .section-title {
     color: #39ff14;
     text-shadow: 0 0 10px #39ff14;
@@ -61,7 +61,7 @@ body {
     text-align: center;
 }
 
-/* Empty cart */
+
 .empty-cart {
     background: #111;
     border: 2px solid #1e90ff;
