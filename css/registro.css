@@ -3,7 +3,7 @@
 body {
   background-color: #000; /* negro */
   color: #39ff14; /* verde neón */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +32,6 @@ body {
 
 /*todos los html deben tener esta parte */
 
-
 /* Caja de registro */
 .Registro-box {
   max-width: 500px;
@@ -53,7 +52,6 @@ body {
   text-shadow: 0 0 8px #39ff14;
 }
 
-
 label {
   display: block;
   margin-top: 10px;
@@ -61,8 +59,8 @@ label {
   font-weight: bold;
 }
 
-
-input, select {
+input,
+select {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -75,7 +73,8 @@ input, select {
   transition: 0.3s;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   box-shadow: 0 0 15px #39ff14 inset;
 }
 
