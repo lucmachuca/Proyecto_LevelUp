@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros - LEVEL-UP GAMER</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/nosotros.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">LEVEL-UP GAMER</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex mx-auto search-bar">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar productos..."
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blogs.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="loginDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="bi bi-person"></i> Mi Cuenta
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end bg-dark text-white"
+                  aria-labelledby="loginDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item text-white" href="login.html"
+                      >Inicia sesión</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="registro.html"
+                      >Regístrate</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Mi perfil</a>
+                  </li>
+                  <li><hr class="dropdown-divider bg-light" /></li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Puntos LevelUp</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">
+                  <i class="bi bi-cart3"></i> Carrito
+                  <span id="cart-count" class="badge bg-success">0</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="breadcrumb-section py-3 bg-dark">
+      <div class="container">
+        <a href="index.html" class="text-neon">Inicio</a> >
+        <span class="text-light">Nosotros</span>
+      </div>
+    </nav>
+
+    <section class="hero-nosotros py-5">
+      <div class="container text-center">
+        <h1 class="display-4">Sobre LEVEL-UP GAMER</h1>
+        <p class="lead">Tu tienda de confianza en el mundo gaming</p>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section class="our-history py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <p class="history-text">
+              Level-Up Gamer nació hace dos años como respuesta al rápido
+              crecimiento de la comunidad gamer durante la pandemia. Lo que
+              empezó como una idea entre entusiastas se transformó en una tienda
+              online dedicada a reunir lo mejor del mundo gamer en Chile:
+              consolas, accesorios, computadores, sillas especializadas,etc.
+            </p>
+            <p class="history-text">
+              Buscamos ser una empresa lider dentro del mercado de los
+              videojuegos
+            </p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <h3>150+</h3>
+                <p>Clientes satisfechos</p>
+              </div>
+              <div class="stat-item">
+                <h3>300+</h3>
+                <p>Productos vendidos</p>
+              </div>
+              <div class="stat-item">
+                <h3>100%</h3>
+                <p>Productos garantizados</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="../imagenes/levelupgamer.jpg"
+              alt="Nuestro equipo LEVEL-UP GAMER"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión y Visión -->
+    <section class="mission-vision py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card-mission">
+              <i class="bi bi-bullseye"></i>
+              <h3>Misión</h3>
+              <p>
+                Proporcionar productos de alta calidad para gamers en todo
+                Chile, ofreciendo una experiencia de compra única y
+                personalizada, con un enfoque en la satisfacción del cliente y
+                el crecimiento de la comunidad gamer.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-vision">
+              <i class="bi bi-eye"></i>
+              <h3>Visión</h3>
+              <p>
+                Ser la tienda online líder en productos para gamers en Chile,
+                reconocida por su innovación, servicio al cliente excepcional, y
+                un programa de fidelización basado en gamificación que
+                recompense a nuestros clientes más fieles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="values py-5">
+      <div class="container">
+        <h2 class="section-title text-center">Nuestros Valores</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="value-card">
+              <i class="bi bi-heart"></i>
+              <h4>Pasión por el Gaming</h4>
+              <p>
+                Vivimos y respiramos gaming. Entendemos tus necesidades porque
+                somos gamers como tú.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-card">
+              <i class="bi bi-shield-check"></i>
+              <h4>Calidad Garantizada</h4>
+              <p>
+                Todos nuestros productos tienen garantía oficial y pasan por
+                rigurosos controles de calidad.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-card">
+              <i class="bi bi-people"></i>
+              <h4>Comunidad</h4>
+              <p>
+                Creemos en construir una comunidad gaming fuerte y unida donde
+                todos sean bienvenidos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo/el team -->
+    <section class="team py-5 bg-dark">
+      <div class="container">
+        <h2 class="section-title text-center">Nuestro Equipo</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-card">
+              <img
+                src="https://pbs.twimg.com/profile_images/760158703433678848/x_kb0LZN_400x400.jpg"
+                alt="CEO"
+                class="team-img"
+              />
+              <h4>Cristian Moreno</h4>
+              <p>CEO & Fundador</p>
+              <p class="team-desc">
+                Gamer desde los 8 años. Ex taxista, actual influencer y streamer
+                en kick.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-card">
+              <img
+                src="https://pbs.twimg.com/profile_images/1933433442273800193/tAJSdl3w_400x400.jpg"
+                alt="CMO"
+                class="team-img"
+              />
+              <h4>Nicolás Liñán de Ariza</h4>
+              <p>CMO</p>
+              <p class="team-desc">
+                Experto en redeas sociales y marketing digital. Amante de los
+                RPG.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-card">
+              <img
+                src="https://appdatos.com/wp-content/uploads/2021/02/loreto1.png"
+                alt="CTO"
+                class="team-img"
+              />
+              <h4>Loreto Beltran</h4>
+              <p>CTO</p>
+              <p class="team-desc">
+                Ingeniera en computación. Especialista en setups gaming y
+                optimización.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-card">
+              <img
+                src="https://cloudfront-us-east-1.images.arcpublishing.com/copesa/SV7MCMYYKNCYFOA2DRFL4PLWOA.jpg"
+                alt="Customer Support"
+                class="team-img"
+              />
+              <h4>César Huispe</h4>
+              <p>Soporte Técnico</p>
+              <p class="team-desc">
+                Resuelve cualquier problema técnico. Critico experto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>LEVEL-UP GAMER</h5>
+            <p>Tu tienda de confianza para productos gaming</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-decoration-none text-neon"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="productos.html" class="text-decoration-none text-neon"
+                  >Productos</a
+                >
+              </li>
+              <li>
+                <a href="nosotros.html" class="text-decoration-none text-neon"
+                  >Nosotros</a
+                >
+              </li>
+              <li>
+                <a href="contacto.html" class="text-decoration-none text-neon"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Contacto</h5>
+            <p><i class="bi bi-envelope text-neon"></i> info@levelupgamer.cl</p>
+            <p><i class="bi bi-phone text-neon"></i> +56 9 1234 5678</p>
+            <p>
+              <i class="bi bi-geo-alt text-neon"></i> Av. Principal 123,
+              Santiago
+            </p>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; 2025 LEVEL-UP GAMER. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/nosotros.js"></script>
+  </body>
+</html>
